@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche Projet - L'Atelier Douceur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fiche.css">
+</head>
+<body>
+    <header>
+        <h1>L'Atelier Douceur</h1>
+        <p>Fiche projet - BTS SIO SLAM 2026</p>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="btn btn-secondary retour">← Retour au portfolio</a>
+
+        <!-- Présentation générale -->
+        <section class="fiche-section">
+            <h2>Présentation du projet</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Intitulé</th>
+                    <td>L'Atelier Douceur</td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>Site web de partage de recettes</td>
+                </tr>
+                <tr>
+                    <th>Contexte</th>
+                    <td>Projet personnel réalisé dans le cadre du BTS SIO SLAM</td>
+                </tr>
+                <tr>
+                    <th>Période</th>
+                    <td>2025 - 2026</td>
+                </tr>
+                <tr>
+                    <th>Rôle</th>
+                    <td>Développeur unique (conception et réalisation)</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Description -->
+        <section class="fiche-section">
+            <h2>Description</h2>
+            <p>
+                L'Atelier Douceur est un site web communautaire dédié au partage de recettes de desserts.
+                Les utilisateurs peuvent créer un compte, publier leurs propres recettes avec photos et instructions,
+                les modifier ou les supprimer, et commenter les recettes des autres membres.
+            </p>
+        </section>
+
+        <!-- Fonctionnalités -->
+        <section class="fiche-section">
+            <h2>Fonctionnalités</h2>
+            <ul class="liste">
+                <li>Inscription et connexion utilisateur (authentification sécurisée)</li>
+                <li>Création, modification et suppression de recettes (CRUD)</li>
+                <li>Upload de photos pour illustrer les recettes</li>
+                <li>Système de commentaires sur les recettes</li>
+                <li>Recherche de recettes par nom ou catégorie</li>
+                <li>Page profil utilisateur avec liste de ses recettes</li>
+            </ul>
+        </section>
+
+        <!-- Technologies -->
+        <section class="fiche-section">
+            <h2>Technologies utilisées</h2>
+            <div class="technologies">
+                <span class="tech">PHP</span>
+                <span class="tech">MySQL</span>
+                <span class="tech">Bootstrap 5</span>
+                <span class="tech">HTML/CSS</span>
+            </div>
+            <table class="info-table" style="margin-top: 1rem;">
+                <tr>
+                    <th>Langage back-end</th>
+                    <td>PHP (sans framework)</td>
+                </tr>
+                <tr>
+                    <th>Base de données</th>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <th>Front-end</th>
+                    <td>HTML, CSS, Bootstrap 5</td>
+                </tr>
+                <tr>
+                    <th>Serveur local</th>
+                    <td>XAMPP / WampServer</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Architecture BDD -->
+        <section class="fiche-section">
+            <h2>Base de données</h2>
+            <p>Principales tables :</p>
+            <ul class="liste">
+                <li><strong>utilisateurs</strong> : id, nom, email, mot_de_passe, date_inscription</li>
+                <li><strong>recettes</strong> : id, titre, description, ingredients, etapes, photo, id_utilisateur, date_creation</li>
+                <li><strong>commentaires</strong> : id, contenu, id_recette, id_utilisateur, date</li>
+                <li><strong>categories</strong> : id, nom</li>
+            </ul>
+        </section>
+
+        <!-- Captures -->
+        <section class="fiche-section">
+            <h2>Captures d'écran</h2>
+            <div class="captures">
+                <figure>
+                    <img src="images/atelier-douceur-preview.png" alt="Page d'accueil L'Atelier Douceur">
+                    <figcaption>Page d'accueil</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="fiche-section">
+            <h2>Compétences couvertes (référentiel BTS SIO)</h2>
+            <ul class="liste">
+                <li>Développer une application (PHP, MySQL)</li>
+                <li>Concevoir et implémenter une base de données relationnelle</li>
+                <li>Gérer les droits d'accès et l'authentification</li>
+                <li>Assurer la qualité du code (structure, lisibilité)</li>
+                <li>Réaliser une interface utilisateur adaptative (responsive)</li>
+            </ul>
+        </section>
+
+        <!-- Liens -->
+        <section class="fiche-section">
+            <h2>Liens</h2>
+            <div class="liens">
+                <a href="#" class="btn btn-primary">Code source (GitHub)</a>
+                <a href="#" class="btn btn-secondary">Documentation</a>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn btn-secondary retour">← Retour au portfolio</a>
+    </main>
+
+    <footer>
+        <p>BTS SIO SLAM - Session 2026</p>
+        <p>Contact : abdel@exemple.fr</p>
+    </footer>
+</body>
+</html>

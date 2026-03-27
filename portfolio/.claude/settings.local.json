@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Acer Nitro/**)",
+      "Read(//c/Users/Acer Nitro/Documents/**)",
+      "Read(//c/xampp/htdocs/les-bonnes-pieces/**)",
+      "Read(//c/xampp/htdocs/php/**)"
+    ]
+  }
+}

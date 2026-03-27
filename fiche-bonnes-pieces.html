@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche Projet - Les Bonnes Pièces</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fiche.css">
+</head>
+<body>
+    <header>
+        <h1>Les Bonnes Pièces</h1>
+        <p>Fiche projet - BTS SIO SLAM 2026</p>
+    </header>
+
+    <main class="container">
+        <a href="index.html" class="btn btn-secondary retour">← Retour au portfolio</a>
+
+        <!-- Présentation générale -->
+        <section class="fiche-section">
+            <h2>Présentation du projet</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Intitulé</th>
+                    <td>Les Bonnes Pièces</td>
+                </tr>
+                <tr>
+                    <th>Type</th>
+                    <td>Site e-commerce de pièces automobiles</td>
+                </tr>
+                <tr>
+                    <th>Contexte</th>
+                    <td>Projet personnel réalisé dans le cadre du BTS SIO SLAM</td>
+                </tr>
+                <tr>
+                    <th>Période</th>
+                    <td>2025 - 2026</td>
+                </tr>
+                <tr>
+                    <th>Rôle</th>
+                    <td>Développeur unique (conception et réalisation)</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Description -->
+        <section class="fiche-section">
+            <h2>Description</h2>
+            <p>
+                Les Bonnes Pièces est un site e-commerce spécialisé dans la vente de pièces automobiles.
+                Il permet aux clients de parcourir un catalogue de produits, d'ajouter des articles à un panier,
+                et de passer commande après authentification. Un espace d'administration permet de gérer
+                les produits, les stocks et les commandes.
+            </p>
+        </section>
+
+        <!-- Fonctionnalités -->
+        <section class="fiche-section">
+            <h2>Fonctionnalités</h2>
+            <ul class="liste">
+                <li>Catalogue de produits avec filtres par catégorie</li>
+                <li>Fiche produit détaillée (photo, description, prix, stock)</li>
+                <li>Système de panier (ajout, modification, suppression d'articles)</li>
+                <li>Inscription et connexion utilisateur</li>
+                <li>Passage de commande avec récapitulatif</li>
+                <li>Espace administration : gestion des produits (CRUD), gestion des commandes</li>
+            </ul>
+        </section>
+
+        <!-- Technologies -->
+        <section class="fiche-section">
+            <h2>Technologies utilisées</h2>
+            <div class="technologies">
+                <span class="tech">PHP</span>
+                <span class="tech">MySQL</span>
+                <span class="tech">Bootstrap 5</span>
+                <span class="tech">HTML/CSS</span>
+            </div>
+            <table class="info-table" style="margin-top: 1rem;">
+                <tr>
+                    <th>Langage back-end</th>
+                    <td>PHP (sans framework)</td>
+                </tr>
+                <tr>
+                    <th>Base de données</th>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <th>Front-end</th>
+                    <td>HTML, CSS, Bootstrap 5</td>
+                </tr>
+                <tr>
+                    <th>Serveur local</th>
+                    <td>XAMPP / WampServer</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Architecture BDD -->
+        <section class="fiche-section">
+            <h2>Base de données</h2>
+            <p>Principales tables :</p>
+            <ul class="liste">
+                <li><strong>utilisateurs</strong> : id, nom, email, mot_de_passe, role (client/admin)</li>
+                <li><strong>produits</strong> : id, nom, description, prix, stock, photo, id_categorie</li>
+                <li><strong>categories</strong> : id, nom</li>
+                <li><strong>commandes</strong> : id, id_utilisateur, date, statut, total</li>
+                <li><strong>lignes_commande</strong> : id, id_commande, id_produit, quantite, prix_unitaire</li>
+            </ul>
+        </section>
+
+        <!-- Captures -->
+        <section class="fiche-section">
+            <h2>Captures d'écran</h2>
+            <div class="captures">
+                <figure>
+                    <img src="images/bonnes-pieces-preview.png" alt="Page d'accueil Les Bonnes Pièces">
+                    <figcaption>Page d'accueil</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="fiche-section">
+            <h2>Compétences couvertes (référentiel BTS SIO)</h2>
+            <ul class="liste">
+                <li>Développer une application web complète (PHP, MySQL)</li>
+                <li>Concevoir et implémenter une base de données relationnelle</li>
+                <li>Gérer les sessions et l'authentification utilisateur</li>
+                <li>Différencier les droits d'accès (client / administrateur)</li>
+                <li>Réaliser une interface utilisateur adaptative (responsive)</li>
+            </ul>
+        </section>
+
+        <!-- Liens -->
+        <section class="fiche-section">
+            <h2>Liens</h2>
+            <div class="liens">
+                <a href="#" class="btn btn-primary">Code source (GitHub)</a>
+                <a href="#" class="btn btn-secondary">Documentation</a>
+            </div>
+        </section>
+
+        <a href="index.html" class="btn btn-secondary retour">← Retour au portfolio</a>
+    </main>
+
+    <footer>
+        <p>BTS SIO SLAM - Session 2026</p>
+        <p>Contact : abdel@exemple.fr</p>
+    </footer>
+</body>
+</html>

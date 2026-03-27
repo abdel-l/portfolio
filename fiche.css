@@ -1,0 +1,78 @@
+.retour {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.fiche-section {
+    background: white;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.fiche-section h2 {
+    color: #0d6efd;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #e7f3ff;
+    padding-bottom: 0.5rem;
+}
+
+.fiche-section p {
+    line-height: 1.8;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    padding: 0.6rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.info-table th {
+    width: 200px;
+    color: #555;
+    font-weight: 600;
+    background: #f8f9fa;
+}
+
+.liste {
+    padding-left: 1.5rem;
+    line-height: 2;
+}
+
+.captures {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.captures figure {
+    flex: 1;
+    min-width: 250px;
+}
+
+.captures img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.captures figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    .info-table th {
+        width: 130px;
+    }
+}
