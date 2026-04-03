@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets — Abdelkader FOFANA</title>
+    <title>Projets & Fiches — Abdelkader FOFANA</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,62 +14,215 @@
 <nav class="navbar"></nav>
 
 <main class="main-content">
-    <div class="section-header">
-        <h2 class="section-title">Projets</h2>
-        <div class="section-line"></div>
-        <p class="section-sub">Projets réalisés dans le cadre du BTS SIO — Dossier E5</p>
-    </div>
-    <div class="projects-grid">
 
-        <div class="card project-card">
-            <div class="project-icon bg-blue"><i class="fas fa-utensils"></i></div>
-            <h3>Gust'Délice</h3>
-            <p class="project-sub">Site de partage de recettes de desserts</p>
-            <p class="project-desc">Application web full-stack permettant aux utilisateurs de créer un compte, publier leurs recettes, les modifier et commenter les créations des autres.</p>
-            <div class="tech-tags">
-                <span class="tech">PHP</span>
-                <span class="tech">MySQL</span>
-                <span class="tech">Bootstrap 5</span>
-                <span class="tech">HTML/CSS</span>
+    <!-- PROJETS -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Projets</h2>
+            <div class="section-line"></div>
+            <p class="section-sub">Projets réalisés dans le cadre du BTS SIO — Dossier E5</p>
+        </div>
+        <div class="projects-grid">
+
+            <div class="card project-card">
+                <div class="project-icon bg-blue"><i class="fas fa-utensils"></i></div>
+                <h3>Gust'Délice</h3>
+                <p class="project-sub">Site de partage de recettes de desserts</p>
+                <p class="project-desc">Application web full-stack permettant aux utilisateurs de créer un compte, publier leurs recettes, les modifier et commenter les créations des autres.</p>
+                <div class="tech-tags">
+                    <span class="tech">PHP</span>
+                    <span class="tech">MySQL</span>
+                    <span class="tech">Bootstrap 5</span>
+                    <span class="tech">HTML/CSS</span>
+                </div>
+                <ul class="project-features">
+                    <li>Authentification sécurisée (sessions PHP, password_hash)</li>
+                    <li>CRUD complet avec upload d'images</li>
+                    <li>Système de commentaires</li>
+                    <li>PDO et requêtes SQL préparées</li>
+                </ul>
+                <div class="project-btns">
+                    <a href="https://github.com/abdel-l/latelier-douceur" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Code source</a>
+                </div>
             </div>
-            <ul class="project-features">
-                <li>Authentification sécurisée (sessions PHP, password_hash)</li>
-                <li>CRUD complet avec upload d'images</li>
-                <li>Système de commentaires</li>
-                <li>PDO et requêtes SQL préparées</li>
-                <li>Interface responsive</li>
-            </ul>
-            <div class="project-btns">
-                <a href="https://github.com/abdel-l/latelier-douceur" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Code source</a>
-                <a href="fiches.html" class="btn btn-outline">Fiche descriptive</a>
+
+            <div class="card project-card">
+                <div class="project-icon bg-pink"><i class="fas fa-car"></i></div>
+                <h3>Les Bonnes Pièces</h3>
+                <p class="project-sub">Catalogue e-commerce pièces automobiles</p>
+                <p class="project-desc">Site e-commerce avec catalogue produits, système de panier, authentification utilisateur et interface d'administration complète.</p>
+                <div class="tech-tags">
+                    <span class="tech">PHP</span>
+                    <span class="tech">MySQL</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">Bootstrap 5</span>
+                </div>
+                <ul class="project-features">
+                    <li>Catalogue de produits dynamique</li>
+                    <li>Système de panier (sessions PHP)</li>
+                    <li>Authentification et gestion utilisateurs</li>
+                    <li>Interface d'administration (CRUD produits)</li>
+                </ul>
+                <div class="project-btns">
+                    <a href="https://github.com/abdel-l/les-bonnes-pieces" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Code source</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FICHES DESCRIPTIVES -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Fiches descriptives</h2>
+            <div class="section-line"></div>
+            <p class="section-sub">Compétences mobilisées — Référentiel BTS SIO SLAM (E4 &amp; E5)</p>
+        </div>
+
+        <!-- FICHE E4 -->
+        <div class="card fiche-card fiche-e4">
+            <div class="fiche-head">
+                <div>
+                    <span class="fiche-label">E4 — Stage</span>
+                    <h3>Les Réparateurs Mac et PC</h3>
+                </div>
+                <a href="rapport-de-stage.docx" download class="btn btn-outline"><i class="fas fa-download"></i> Rapport de stage</a>
+            </div>
+            <div class="fiche-body">
+                <div class="fiche-bloc">
+                    <h4><i class="fas fa-info-circle"></i> Contexte</h4>
+                    <p>Stage en entreprise spécialisée dans la réparation de matériels informatiques (PC et Mac). Missions de support technique N1/N2 et participation à la gestion du parc informatique.</p>
+                </div>
+                <div class="fiche-bloc">
+                    <h4><i class="fas fa-server"></i> Environnement technique</h4>
+                    <ul>
+                        <li><strong>Systèmes :</strong> Windows 10/11, macOS</li>
+                        <li><strong>Matériels :</strong> PC portables et fixes, Mac, périphériques</li>
+                        <li><strong>Bureautique :</strong> Suite Microsoft Office, logiciels métier</li>
+                    </ul>
+                </div>
+                <div class="fiche-bloc full">
+                    <h4><i class="fas fa-check-circle"></i> Compétences mobilisées</h4>
+                    <table class="comp-table">
+                        <thead><tr><th>Code</th><th>Compétence</th><th>Mise en œuvre</th></tr></thead>
+                        <tbody>
+                            <tr><td>B1.1</td><td>Gestion du patrimoine informatique</td><td>Inventaire matériels, suivi des interventions</td></tr>
+                            <tr><td>B1.2</td><td>Réponse aux incidents et demandes d'assistance</td><td>Diagnostic et résolution d'incidents (PC, Mac), prise en charge clients</td></tr>
+                            <tr><td>B1.4</td><td>Travail en mode projet</td><td>Gestion des priorités, suivi dossiers clients, respect des délais</td></tr>
+                            <tr><td>B1.5</td><td>Mise à disposition d'un service informatique</td><td>Installation et configuration postes, remise en état et livraison</td></tr>
+                            <tr><td>B1.6</td><td>Organisation de son développement professionnel</td><td>Adaptation aux procédures internes, relation client</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fiche-bloc full">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Difficultés &amp; solutions</h4>
+                    <ul>
+                        <li><strong>Diversité des pannes :</strong> Méthode de diagnostic systématique (logiciel → matériel → système)</li>
+                        <li><strong>Communication client :</strong> Adaptation du vocabulaire technique aux non-initiés</li>
+                        <li><strong>Gestion du temps :</strong> Priorisation selon l'urgence et le type de panne</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="card project-card">
-            <div class="project-icon bg-pink"><i class="fas fa-car"></i></div>
-            <h3>Les Bonnes Pièces</h3>
-            <p class="project-sub">Catalogue e-commerce pièces automobiles</p>
-            <p class="project-desc">Site e-commerce avec catalogue produits, système de panier, authentification utilisateur et interface d'administration complète.</p>
-            <div class="tech-tags">
-                <span class="tech">PHP</span>
-                <span class="tech">MySQL</span>
-                <span class="tech">JavaScript</span>
-                <span class="tech">Bootstrap 5</span>
+        <!-- FICHE E5 PROJET 1 -->
+        <div class="card fiche-card fiche-e5">
+            <div class="fiche-head">
+                <div>
+                    <span class="fiche-label">E5 — Projet 1</span>
+                    <h3>Gust'Délice</h3>
+                </div>
+                <span class="fiche-badge">Développement applicatif</span>
             </div>
-            <ul class="project-features">
-                <li>Catalogue de produits dynamique</li>
-                <li>Système de panier (sessions PHP)</li>
-                <li>Authentification et gestion utilisateurs</li>
-                <li>Interface d'administration (CRUD produits)</li>
-                <li>Design responsive</li>
-            </ul>
-            <div class="project-btns">
-                <a href="https://github.com/abdel-l/les-bonnes-pieces" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Code source</a>
-                <a href="fiches.html" class="btn btn-outline">Fiche descriptive</a>
+            <div class="fiche-body">
+                <div class="fiche-bloc">
+                    <h4><i class="fas fa-info-circle"></i> Contexte</h4>
+                    <p>Projet personnel réalisé en autonomie. Conception et développement d'une application web complète de partage de recettes de desserts.</p>
+                </div>
+                <div class="fiche-bloc">
+                    <h4><i class="fas fa-server"></i> Environnement technique</h4>
+                    <ul>
+                        <li><strong>Serveur :</strong> Apache (XAMPP)</li>
+                        <li><strong>Backend :</strong> PHP 8</li>
+                        <li><strong>Base de données :</strong> MySQL / PhpMyAdmin</li>
+                        <li><strong>Frontend :</strong> HTML5, CSS3, Bootstrap 5</li>
+                        <li><strong>Versioning :</strong> Git / GitHub</li>
+                    </ul>
+                </div>
+                <div class="fiche-bloc full">
+                    <h4><i class="fas fa-check-circle"></i> Compétences mobilisées</h4>
+                    <table class="comp-table">
+                        <thead><tr><th>Code</th><th>Compétence</th><th>Mise en œuvre</th></tr></thead>
+                        <tbody>
+                            <tr><td>B2.1</td><td>Conception et développement d'une solution applicative</td><td>Conception MCD, développement PHP complet (CRUD, sessions, upload)</td></tr>
+                            <tr><td>B2.2</td><td>Maintenance corrective ou évolutive</td><td>Corrections de bugs, ajout du système de commentaires</td></tr>
+                            <tr><td>B2.3</td><td>Gestion des données</td><td>Modélisation BDD MySQL, requêtes PDO préparées, sécurisation</td></tr>
+                            <tr><td>B2.4</td><td>Travail en mode projet</td><td>Planification des étapes, suivi sur GitHub</td></tr>
+                            <tr><td>B2.5</td><td>Production de documentation</td><td>Documentation technique, dictionnaire de données, MCD</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fiche-bloc full">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Difficultés &amp; solutions</h4>
+                    <ul>
+                        <li><strong>Upload d'images :</strong> Gestion types MIME et noms uniques — <code>uniqid()</code> et vérification <code>$_FILES</code></li>
+                        <li><strong>Sécurité :</strong> Risques d'injections SQL — PDO et requêtes préparées</li>
+                        <li><strong>Sessions :</strong> Déconnexion automatique et contrôle d'accès aux pages protégées</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-    </div>
+        <!-- FICHE E5 PROJET 2 -->
+        <div class="card fiche-card fiche-e5">
+            <div class="fiche-head">
+                <div>
+                    <span class="fiche-label">E5 — Projet 2</span>
+                    <h3>Les Bonnes Pièces</h3>
+                </div>
+                <span class="fiche-badge">Développement applicatif</span>
+            </div>
+            <div class="fiche-body">
+                <div class="fiche-bloc">
+                    <h4><i class="fas fa-info-circle"></i> Contexte</h4>
+                    <p>Projet simulant un site e-commerce de vente de pièces automobiles. Maîtrise de la gestion d'un catalogue produits, d'un système de panier et d'une interface d'administration.</p>
+                </div>
+                <div class="fiche-bloc">
+                    <h4><i class="fas fa-server"></i> Environnement technique</h4>
+                    <ul>
+                        <li><strong>Serveur :</strong> Apache (XAMPP)</li>
+                        <li><strong>Backend :</strong> PHP 8</li>
+                        <li><strong>Base de données :</strong> MySQL / PhpMyAdmin</li>
+                        <li><strong>Frontend :</strong> HTML5, CSS3, Bootstrap 5, JavaScript</li>
+                        <li><strong>Versioning :</strong> Git / GitHub</li>
+                    </ul>
+                </div>
+                <div class="fiche-bloc full">
+                    <h4><i class="fas fa-check-circle"></i> Compétences mobilisées</h4>
+                    <table class="comp-table">
+                        <thead><tr><th>Code</th><th>Compétence</th><th>Mise en œuvre</th></tr></thead>
+                        <tbody>
+                            <tr><td>B2.1</td><td>Conception et développement d'une solution applicative</td><td>Architecture MVC simplifiée, panier en session, interface admin complète</td></tr>
+                            <tr><td>B2.2</td><td>Maintenance corrective ou évolutive</td><td>Ajout de fonctionnalités (filtres produits, gestion des stocks)</td></tr>
+                            <tr><td>B2.3</td><td>Gestion des données</td><td>BDD relationnelle (produits, catégories, utilisateurs), requêtes PDO</td></tr>
+                            <tr><td>B2.4</td><td>Travail en mode projet</td><td>Découpage en sprints, versioning GitHub, cahier des charges</td></tr>
+                            <tr><td>B2.5</td><td>Production de documentation</td><td>Manuel utilisateur, documentation BDD, MLD</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="fiche-bloc full">
+                    <h4><i class="fas fa-exclamation-triangle"></i> Difficultés &amp; solutions</h4>
+                    <ul>
+                        <li><strong>Panier multi-produits :</strong> Persistance en session — tableau associatif <code>$_SESSION</code></li>
+                        <li><strong>Droits admin :</strong> Champ <code>role</code> en BDD avec vérification à chaque page protégée</li>
+                        <li><strong>Performances :</strong> Optimisation des jointures SQL pour le catalogue avec filtres</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
 </main>
 
 <script src="nav.js"></script>
