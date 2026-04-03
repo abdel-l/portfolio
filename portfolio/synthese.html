@@ -13,24 +13,7 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <a href="index.html" class="nav-brand">AF</a>
-    <ul class="nav-menu">
-        <li><a href="index.html#accueil" class="nav-item">Accueil</a></li>
-        <li><a href="index.html#about" class="nav-item">À propos</a></li>
-        <li><a href="index.html#formation" class="nav-item">Formation</a></li>
-        <li><a href="index.html#experiences" class="nav-item">Expériences</a></li>
-        <li><a href="index.html#projets" class="nav-item">Projets</a></li>
-        <li><a href="index.html#fiches" class="nav-item">Fiches E4/E5</a></li>
-        <li><a href="competences.html" class="nav-item">Compétences</a></li>
-        <li><a href="synthese.html" class="nav-item active">Synthèse</a></li>
-        <li><a href="index.html#veille" class="nav-item">Veille</a></li>
-        <li><a href="index.html#contact" class="nav-item">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" id="darkToggle" title="Mode sombre">
-        <i class="fas fa-moon"></i>
-    </button>
-</nav>
+<nav class="navbar"></nav>
 
 <div class="page-content">
 
@@ -245,19 +228,7 @@
     </div>
 </div>
 
-<script>
-// Dark mode
-const toggle = document.getElementById('darkToggle');
-const html = document.documentElement;
-const saved = localStorage.getItem('theme') || 'light';
-html.setAttribute('data-theme', saved);
-toggle.querySelector('i').className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-toggle.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-    toggle.querySelector('i').className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-});
-</script>
+<script src="nav.js"></script>
+<script>initNav('synthese');</script>
 </body>
 </html>

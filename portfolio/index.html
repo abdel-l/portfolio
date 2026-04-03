@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelkader FOFANA - Portfolio BTS SIO</title>
+    <title>Abdelkader FOFANA — Portfolio BTS SIO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,32 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<nav class="navbar"></nav>
 
-<!-- NAVBAR HORIZONTALE -->
-<nav class="navbar">
-    <div class="nav-brand">AF</div>
-    <ul class="nav-menu">
-        <li><a href="#accueil" class="nav-item active">Accueil</a></li>
-        <li><a href="#about" class="nav-item">À propos</a></li>
-        <li><a href="#formation" class="nav-item">Formation</a></li>
-        <li><a href="#experiences" class="nav-item">Expériences</a></li>
-        <li><a href="#projets" class="nav-item">Projets</a></li>
-        <li><a href="#fiches" class="nav-item">Fiches E4/E5</a></li>
-        <li><a href="competences.html" class="nav-item">Compétences</a></li>
-        <li><a href="synthese.html" class="nav-item">Synthèse</a></li>
-        <li><a href="#veille" class="nav-item">Veille</a></li>
-        <li><a href="#contact" class="nav-item">Contact</a></li>
-    </ul>
-    <button class="dark-toggle" id="darkToggle" title="Mode sombre">
-        <i class="fas fa-moon"></i>
-    </button>
-</nav>
-
-<!-- MAIN CONTENT -->
 <main class="main-content">
-
-    <!-- HERO -->
-    <section id="accueil" class="section hero-section">
+    <section class="hero-section">
         <div class="hero-card card">
             <div class="hero-bg"></div>
             <div class="hero-body">
@@ -51,8 +29,8 @@
                     <span class="tag">Bootstrap 5</span>
                 </div>
                 <div class="hero-btns">
-                    <a href="#projets" class="btn btn-primary">Mes projets</a>
-                    <a href="#contact" class="btn btn-gradient">Me contacter</a>
+                    <a href="projets.html" class="btn btn-primary">Mes projets</a>
+                    <a href="contact.html" class="btn btn-gradient">Me contacter</a>
                 </div>
                 <div class="hero-socials">
                     <a href="https://github.com/abdel-l" target="_blank"><i class="fab fa-github"></i></a>
@@ -60,450 +38,45 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- À PROPOS -->
-    <section id="about" class="section">
-        <div class="section-header">
-            <h2 class="section-title">À propos</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="about-grid">
-            <div class="card about-text-card">
-                <p>
-                    Candidat libre au <strong>BTS SIO option SLAM</strong> (Services Informatiques aux Organisations –
-                    Solutions Logicielles et Applications Métiers), session 2026, je suis passionné par le développement
-                    web et les technologies backend.
-                </p>
-                <p>
-                    Ma formation m'a permis de développer des compétences solides en <strong>PHP/MySQL</strong>,
-                    <strong>JavaScript</strong>, et en gestion de projets web de bout en bout. J'ai également une
-                    expérience concrète en <strong>support technique N1/N2</strong>, ce qui me donne une vision
-                    complète de l'informatique.
-                </p>
-            </div>
-            <div class="card about-info-card">
-                <div class="info-row"><span class="info-label"><i class="fas fa-map-marker-alt"></i> Localisation</span><span class="info-val">Paris</span></div>
-                <div class="info-row"><span class="info-label"><i class="fas fa-envelope"></i> Email</span><span class="info-val">Abdelkaderfofanaa@gmail.com</span></div>
-                <div class="info-row"><span class="info-label"><i class="fas fa-phone"></i> Téléphone</span><span class="info-val">07 00 00 00 00</span></div>
-                <div class="info-row"><span class="info-label"><i class="fas fa-circle-dot"></i> Statut</span><span class="info-val badge-green">Disponible</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FORMATION -->
-    <section id="formation" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Formation</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="card timeline-card">
-                    <div class="timeline-top">
-                        <h3>BTS SIO — SLAM</h3>
-                        <span class="timeline-date">Session 2026 (en cours)</span>
-                    </div>
-                    <p class="timeline-sub">Candidat libre • Services Informatiques aux Organisations</p>
-                    <ul>
-                        <li>Développement d'applications web (PHP, JavaScript, MySQL)</li>
-                        <li>Gestion de bases de données relationnelles</li>
-                        <li>Méthodologies de développement et gestion de projet</li>
-                        <li>Support et maintenance applicative</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="card timeline-card">
-                    <div class="timeline-top">
-                        <h3>BTS NDRC</h3>
-                        <span class="timeline-date">Après le Bac</span>
-                    </div>
-                    <p class="timeline-sub">Négociation et Digitalisation de la Relation Client</p>
-                    <ul>
-                        <li>Techniques de vente et négociation commerciale</li>
-                        <li>Relation client et gestion de portefeuille</li>
-                        <li>Digitalisation des processus commerciaux</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="card timeline-card">
-                    <div class="timeline-top">
-                        <h3>Bac Gestion-Administration</h3>
-                        <span class="timeline-date">2019 — 2021</span>
-                    </div>
-                    <ul>
-                        <li>Gestion administrative et organisationnelle</li>
-                        <li>Bureautique avancée (Excel, Word, PowerPoint)</li>
-                    </ul>
-                </div>
-            </div>
+        <!-- Raccourcis sections -->
+        <div class="home-grid">
+            <a href="about.html" class="home-card card">
+                <div class="hc-icon bg-blue"><i class="fas fa-user"></i></div>
+                <h3>À propos</h3>
+                <p>Mon profil et mes informations</p>
+            </a>
+            <a href="formation.html" class="home-card card">
+                <div class="hc-icon bg-teal"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Formation</h3>
+                <p>BTS SIO, BTS NDRC, Bac</p>
+            </a>
+            <a href="experiences.html" class="home-card card">
+                <div class="hc-icon bg-pink"><i class="fas fa-briefcase"></i></div>
+                <h3>Expériences</h3>
+                <p>Stages professionnels</p>
+            </a>
+            <a href="projets.html" class="home-card card">
+                <div class="hc-icon bg-purple"><i class="fas fa-code"></i></div>
+                <h3>Projets</h3>
+                <p>Gust'Délice & Les Bonnes Pièces</p>
+            </a>
+            <a href="competences.html" class="home-card card">
+                <div class="hc-icon bg-yellow"><i class="fas fa-tools"></i></div>
+                <h3>Compétences</h3>
+                <p>Blocs 1 & 2 — Référentiel BTS SIO</p>
+            </a>
+            <a href="synthese.html" class="home-card card">
+                <div class="hc-icon bg-teal"><i class="fas fa-table"></i></div>
+                <h3>Synthèse</h3>
+                <p>Tableau de synthèse des réalisations</p>
+            </a>
         </div>
     </section>
-
-    <!-- EXPÉRIENCES -->
-    <section id="experiences" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Expériences professionnelles</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="card timeline-card">
-                    <div class="timeline-top">
-                        <h3>Technicien Support N1/N2</h3>
-                        <span class="timeline-date">2023 — Stage</span>
-                    </div>
-                    <p class="timeline-sub">Les Réparateurs Mac et PC</p>
-                    <ul>
-                        <li>Diagnostic et résolution d'incidents logiciels et matériels (PC, Mac)</li>
-                        <li>Installation et configuration de postes de travail</li>
-                        <li>Gestion des priorités d'intervention</li>
-                        <li>Suivi administratif et relation clients</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="card timeline-card">
-                    <div class="timeline-top">
-                        <h3>Support Administratif</h3>
-                        <span class="timeline-date">2022 — Stage</span>
-                    </div>
-                    <p class="timeline-sub">SOS Casamance (Association)</p>
-                    <ul>
-                        <li>Organisation de dossiers administratifs</li>
-                        <li>Archivage et coordination</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJETS -->
-    <section id="projets" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Projets</h2>
-            <div class="section-line"></div>
-            <p class="section-sub">Projets réalisés dans le cadre du BTS SIO — Dossier E5</p>
-        </div>
-        <div class="projects-grid">
-
-            <div class="card project-card">
-                <div class="project-icon bg-blue"><i class="fas fa-utensils"></i></div>
-                <h3>Gust'Délice</h3>
-                <p class="project-sub">Site de partage de recettes de desserts</p>
-                <p class="project-desc">Application web full-stack permettant aux utilisateurs de créer un compte, publier leurs recettes, les modifier et commenter les créations des autres.</p>
-                <div class="tech-tags">
-                    <span class="tech">PHP</span>
-                    <span class="tech">MySQL</span>
-                    <span class="tech">Bootstrap 5</span>
-                    <span class="tech">HTML/CSS</span>
-                </div>
-                <ul class="project-features">
-                    <li>Authentification sécurisée (sessions PHP, password_hash)</li>
-                    <li>CRUD complet avec upload d'images</li>
-                    <li>Système de commentaires</li>
-                    <li>PDO et requêtes SQL préparées</li>
-                </ul>
-                <div class="project-btns">
-                    <a href="https://github.com/abdel-l/latelier-douceur" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Code source</a>
-                    <a href="#fiches" class="btn btn-outline">Fiche descriptive</a>
-                </div>
-            </div>
-
-            <div class="card project-card">
-                <div class="project-icon bg-pink"><i class="fas fa-car"></i></div>
-                <h3>Les Bonnes Pièces</h3>
-                <p class="project-sub">Catalogue e-commerce pièces automobiles</p>
-                <p class="project-desc">Site e-commerce avec catalogue produits, système de panier, authentification utilisateur et interface d'administration complète.</p>
-                <div class="tech-tags">
-                    <span class="tech">PHP</span>
-                    <span class="tech">MySQL</span>
-                    <span class="tech">JavaScript</span>
-                    <span class="tech">Bootstrap 5</span>
-                </div>
-                <ul class="project-features">
-                    <li>Catalogue de produits dynamique</li>
-                    <li>Système de panier (sessions PHP)</li>
-                    <li>Authentification et gestion utilisateurs</li>
-                    <li>Interface d'administration (CRUD produits)</li>
-                </ul>
-                <div class="project-btns">
-                    <a href="https://github.com/abdel-l/les-bonnes-pieces" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Code source</a>
-                    <a href="#fiches" class="btn btn-outline">Fiche descriptive</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FICHES DESCRIPTIVES -->
-    <section id="fiches" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Fiches descriptives</h2>
-            <div class="section-line"></div>
-            <p class="section-sub">Compétences mobilisées — Référentiel BTS SIO SLAM (E4 &amp; E5)</p>
-        </div>
-
-        <!-- FICHE E4 -->
-        <div class="card fiche-card fiche-e4">
-            <div class="fiche-head">
-                <div>
-                    <span class="fiche-label">E4 — Stage</span>
-                    <h3>Les Réparateurs Mac et PC</h3>
-                </div>
-                <a href="rapport-de-stage.docx" download class="btn btn-outline"><i class="fas fa-download"></i> Rapport de stage</a>
-            </div>
-            <div class="fiche-body">
-                <div class="fiche-bloc">
-                    <h4><i class="fas fa-info-circle"></i> Contexte</h4>
-                    <p>Stage en entreprise spécialisée dans la réparation de matériels informatiques (PC et Mac). Missions de support technique N1/N2 et participation à la gestion du parc informatique.</p>
-                </div>
-                <div class="fiche-bloc">
-                    <h4><i class="fas fa-server"></i> Environnement technique</h4>
-                    <ul>
-                        <li><strong>Systèmes :</strong> Windows 10/11, macOS</li>
-                        <li><strong>Matériels :</strong> PC portables et fixes, Mac, périphériques</li>
-                        <li><strong>Bureautique :</strong> Suite Microsoft Office, logiciels métier</li>
-                    </ul>
-                </div>
-                <div class="fiche-bloc full">
-                    <h4><i class="fas fa-check-circle"></i> Compétences mobilisées</h4>
-                    <table class="comp-table">
-                        <thead><tr><th>Code</th><th>Compétence</th><th>Mise en œuvre</th></tr></thead>
-                        <tbody>
-                            <tr><td>B1.1</td><td>Gestion du patrimoine informatique</td><td>Inventaire matériels, suivi des interventions</td></tr>
-                            <tr><td>B1.2</td><td>Réponse aux incidents et demandes d'assistance</td><td>Diagnostic et résolution d'incidents (PC, Mac), prise en charge clients</td></tr>
-                            <tr><td>B1.4</td><td>Travail en mode projet</td><td>Gestion des priorités, suivi dossiers clients, respect des délais</td></tr>
-                            <tr><td>B1.5</td><td>Mise à disposition d'un service informatique</td><td>Installation et configuration postes, remise en état et livraison</td></tr>
-                            <tr><td>B1.6</td><td>Organisation de son développement professionnel</td><td>Adaptation aux procédures internes, relation client</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="fiche-bloc full">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Difficultés &amp; solutions</h4>
-                    <ul>
-                        <li><strong>Diversité des pannes :</strong> Méthode de diagnostic systématique (logiciel → matériel → système)</li>
-                        <li><strong>Communication client :</strong> Adaptation du vocabulaire technique aux non-initiés</li>
-                        <li><strong>Gestion du temps :</strong> Priorisation selon l'urgence et le type de panne</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- FICHE E5 - PROJET 1 -->
-        <div class="card fiche-card fiche-e5">
-            <div class="fiche-head">
-                <div>
-                    <span class="fiche-label">E5 — Projet 1</span>
-                    <h3>Gust'Délice</h3>
-                </div>
-                <span class="fiche-badge">Développement applicatif</span>
-            </div>
-            <div class="fiche-body">
-                <div class="fiche-bloc">
-                    <h4><i class="fas fa-info-circle"></i> Contexte</h4>
-                    <p>Projet personnel réalisé en autonomie dans le cadre du BTS SIO SLAM. Conception et développement d'une application web complète de partage de recettes de desserts.</p>
-                </div>
-                <div class="fiche-bloc">
-                    <h4><i class="fas fa-server"></i> Environnement technique</h4>
-                    <ul>
-                        <li><strong>Serveur :</strong> Apache (XAMPP)</li>
-                        <li><strong>Backend :</strong> PHP 8</li>
-                        <li><strong>Base de données :</strong> MySQL / PhpMyAdmin</li>
-                        <li><strong>Frontend :</strong> HTML5, CSS3, Bootstrap 5</li>
-                        <li><strong>Versioning :</strong> Git / GitHub</li>
-                    </ul>
-                </div>
-                <div class="fiche-bloc full">
-                    <h4><i class="fas fa-check-circle"></i> Compétences mobilisées</h4>
-                    <table class="comp-table">
-                        <thead><tr><th>Code</th><th>Compétence</th><th>Mise en œuvre</th></tr></thead>
-                        <tbody>
-                            <tr><td>B2.1</td><td>Conception et développement d'une solution applicative</td><td>Conception MCD, développement PHP complet (CRUD, sessions, upload)</td></tr>
-                            <tr><td>B2.2</td><td>Maintenance corrective ou évolutive</td><td>Corrections de bugs, ajout du système de commentaires</td></tr>
-                            <tr><td>B2.3</td><td>Gestion des données</td><td>Modélisation BDD MySQL, requêtes PDO préparées, sécurisation</td></tr>
-                            <tr><td>B2.4</td><td>Travail en mode projet</td><td>Planification des étapes, suivi sur GitHub</td></tr>
-                            <tr><td>B2.5</td><td>Production de documentation</td><td>Documentation technique, dictionnaire de données, MCD</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="fiche-bloc full">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Difficultés &amp; solutions</h4>
-                    <ul>
-                        <li><strong>Upload d'images :</strong> Gestion types MIME et noms uniques — <code>uniqid()</code> et vérification <code>$_FILES</code></li>
-                        <li><strong>Sécurité :</strong> Risques d'injections SQL — PDO et requêtes préparées</li>
-                        <li><strong>Sessions :</strong> Déconnexion automatique et contrôle d'accès aux pages protégées</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- FICHE E5 - PROJET 2 -->
-        <div class="card fiche-card fiche-e5">
-            <div class="fiche-head">
-                <div>
-                    <span class="fiche-label">E5 — Projet 2</span>
-                    <h3>Les Bonnes Pièces</h3>
-                </div>
-                <span class="fiche-badge">Développement applicatif</span>
-            </div>
-            <div class="fiche-body">
-                <div class="fiche-bloc">
-                    <h4><i class="fas fa-info-circle"></i> Contexte</h4>
-                    <p>Projet simulant un site e-commerce de vente de pièces automobiles. Maîtrise de la gestion d'un catalogue produits, d'un système de panier et d'une interface d'administration.</p>
-                </div>
-                <div class="fiche-bloc">
-                    <h4><i class="fas fa-server"></i> Environnement technique</h4>
-                    <ul>
-                        <li><strong>Serveur :</strong> Apache (XAMPP)</li>
-                        <li><strong>Backend :</strong> PHP 8</li>
-                        <li><strong>Base de données :</strong> MySQL / PhpMyAdmin</li>
-                        <li><strong>Frontend :</strong> HTML5, CSS3, Bootstrap 5, JavaScript</li>
-                        <li><strong>Versioning :</strong> Git / GitHub</li>
-                    </ul>
-                </div>
-                <div class="fiche-bloc full">
-                    <h4><i class="fas fa-check-circle"></i> Compétences mobilisées</h4>
-                    <table class="comp-table">
-                        <thead><tr><th>Code</th><th>Compétence</th><th>Mise en œuvre</th></tr></thead>
-                        <tbody>
-                            <tr><td>B2.1</td><td>Conception et développement d'une solution applicative</td><td>Architecture MVC simplifiée, panier en session, interface admin complète</td></tr>
-                            <tr><td>B2.2</td><td>Maintenance corrective ou évolutive</td><td>Ajout de fonctionnalités (filtres produits, gestion des stocks)</td></tr>
-                            <tr><td>B2.3</td><td>Gestion des données</td><td>BDD relationnelle (produits, catégories, utilisateurs), requêtes PDO</td></tr>
-                            <tr><td>B2.4</td><td>Travail en mode projet</td><td>Découpage en sprints, versioning GitHub, cahier des charges</td></tr>
-                            <tr><td>B2.5</td><td>Production de documentation</td><td>Manuel utilisateur, documentation BDD, MLD</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="fiche-bloc full">
-                    <h4><i class="fas fa-exclamation-triangle"></i> Difficultés &amp; solutions</h4>
-                    <ul>
-                        <li><strong>Panier multi-produits :</strong> Persistance en session — tableau associatif <code>$_SESSION</code></li>
-                        <li><strong>Droits admin :</strong> Champ <code>role</code> en BDD avec vérification à chaque page protégée</li>
-                        <li><strong>Performances :</strong> Optimisation des jointures SQL pour le catalogue avec filtres</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- COMPÉTENCES -->
-    <section id="competences" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Compétences techniques</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="skills-grid">
-            <div class="card skill-card">
-                <div class="skill-icon bg-blue"><i class="fas fa-code"></i></div>
-                <h3>Développement Web</h3>
-                <div class="skill-tags">
-                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-                    <span>PHP</span><span>MySQL</span><span>Bootstrap 5</span><span>Node.js</span>
-                </div>
-            </div>
-            <div class="card skill-card">
-                <div class="skill-icon bg-teal"><i class="fas fa-tools"></i></div>
-                <h3>Outils &amp; Infrastructure</h3>
-                <div class="skill-tags">
-                    <span>Git / GitHub</span><span>XAMPP</span><span>Apache</span>
-                    <span>Windows Server</span><span>Linux</span><span>VS Code</span>
-                </div>
-            </div>
-            <div class="card skill-card">
-                <div class="skill-icon bg-pink"><i class="fas fa-headset"></i></div>
-                <h3>Support Technique</h3>
-                <div class="skill-tags">
-                    <span>Support N1/N2</span><span>Diagnostic matériel</span>
-                    <span>Installation postes</span><span>Relation client</span>
-                </div>
-            </div>
-            <div class="card skill-card">
-                <div class="skill-icon bg-yellow"><i class="fas fa-file-excel"></i></div>
-                <h3>Bureautique &amp; Langues</h3>
-                <div class="skill-tags">
-                    <span>Excel avancé</span><span>Word</span><span>PowerPoint</span>
-                    <span>Français (natif)</span><span>Anglais (scolaire)</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- VEILLE TECHNOLOGIQUE -->
-    <section id="veille" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Veille technologique</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="veille-grid">
-            <div class="card veille-card">
-                <div class="veille-top">
-                    <span class="veille-category bg-purple">Intelligence Artificielle</span>
-                    <span class="veille-date"><i class="fas fa-calendar"></i> 2024</span>
-                </div>
-                <h3>Why PyTorch Gets All the Love</h3>
-                <p class="veille-source"><i class="fas fa-link"></i> Medium — <a href="LIEN_A_REMPLACER" target="_blank" class="veille-link">Lire l'article <i class="fas fa-external-link-alt"></i></a></p>
-                <p class="veille-desc">
-                    PyTorch s'est imposé comme le framework de deep learning préféré des chercheurs et développeurs,
-                    surpassant TensorFlow dans de nombreux domaines. Cet article analyse les raisons de cet engouement.
-                </p>
-                <div class="veille-points">
-                    <h4>Points clés :</h4>
-                    <ul>
-                        <li><strong>Graphes dynamiques (eager execution) :</strong> PyTorch construit le graphe de calcul à la volée, ce qui le rend plus intuitif à déboguer</li>
-                        <li><strong>Pythonique :</strong> Syntaxe proche du Python natif, courbe d'apprentissage plus douce</li>
-                        <li><strong>Communauté recherche :</strong> Adopté massivement par la communauté académique (Google Scholar, arXiv)</li>
-                        <li><strong>Écosystème riche :</strong> HuggingFace, Lightning, torchvision — bibliothèques bien intégrées</li>
-                        <li><strong>Production viable :</strong> TorchScript et ONNX permettent le déploiement en production</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-        <div class="section-header">
-            <h2 class="section-title">Contact</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="contact-grid">
-            <div class="card contact-card">
-                <div class="contact-icon bg-blue"><i class="fas fa-envelope"></i></div>
-                <h3>Email</h3>
-                <a href="mailto:Abdelkaderfofanaa@gmail.com">Abdelkaderfofanaa@gmail.com</a>
-            </div>
-            <div class="card contact-card">
-                <div class="contact-icon bg-pink"><i class="fas fa-phone"></i></div>
-                <h3>Téléphone</h3>
-                <a href="tel:0700000000">07 00 00 00 00</a>
-            </div>
-            <div class="card contact-card">
-                <div class="contact-icon bg-teal"><i class="fas fa-map-marker-alt"></i></div>
-                <h3>Localisation</h3>
-                <p>Paris</p>
-            </div>
-            <div class="card contact-card">
-                <div class="contact-icon bg-purple"><i class="fab fa-github"></i></div>
-                <h3>GitHub</h3>
-                <a href="https://github.com/abdel-l" target="_blank">github.com/abdel-l</a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2026 Abdelkader FOFANA — Portfolio BTS SIO SLAM — Candidat libre Session 2026</p>
-    </footer>
-
 </main>
 
-<script src="script.js"></script>
+<script src="nav.js"></script>
+<script>initNav('accueil');</script>
 </body>
 </html>
+ 
