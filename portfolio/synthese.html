@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthèse — Abdelkader FOFANA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-brand">AF</a>
+    <ul class="nav-menu">
+        <li><a href="index.html#accueil" class="nav-item">Accueil</a></li>
+        <li><a href="index.html#about" class="nav-item">À propos</a></li>
+        <li><a href="index.html#formation" class="nav-item">Formation</a></li>
+        <li><a href="index.html#experiences" class="nav-item">Expériences</a></li>
+        <li><a href="index.html#projets" class="nav-item">Projets</a></li>
+        <li><a href="index.html#fiches" class="nav-item">Fiches E4/E5</a></li>
+        <li><a href="competences.html" class="nav-item">Compétences</a></li>
+        <li><a href="synthese.html" class="nav-item active">Synthèse</a></li>
+        <li><a href="index.html#veille" class="nav-item">Veille</a></li>
+        <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+    </ul>
+    <button class="dark-toggle" id="darkToggle" title="Mode sombre">
+        <i class="fas fa-moon"></i>
+    </button>
+</nav>
+
+<div class="page-content">
+
+    <div class="page-header">
+        <div>
+            <h1 class="page-title">Tableau de synthèse</h1>
+            <p class="page-sub">Réalisations et compétences mobilisées — BTS SIO SLAM</p>
+        </div>
+        <a href="rapport-de-stage.docx" download class="btn btn-outline">
+            <i class="fas fa-download"></i> Rapport de stage
+        </a>
+    </div>
+
+    <!-- LÉGENDE -->
+    <div class="legende card">
+        <span><span class="dot-legend dot-blue"></span> Développement applicatif (SLAM)</span>
+        <span><span class="dot-legend dot-pink"></span> Support et services informatiques</span>
+    </div>
+
+    <!-- TABLEAU -->
+    <div class="synthese-table-wrap">
+        <table class="synthese-table">
+            <thead>
+                <tr>
+                    <th style="width:30%">Réalisation</th>
+                    <th>Compétences mobilisées</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <!-- STAGE E4 -->
+                <tr class="row-pink">
+                    <td class="projet-cell">
+                        <span class="projet-label">E4 — Stage</span>
+                        <strong>Les Réparateurs Mac et PC</strong>
+                        <span class="projet-type">Support Technique N1/N2</span>
+                    </td>
+                    <td class="comp-cell">
+                        <details>
+                            <summary><strong>B1.1</strong> — Gérer le patrimoine informatique</summary>
+                            <ul>
+                                <li>Inventaire des matériels et suivi des interventions</li>
+                                <li>Gestion des pièces de remplacement</li>
+                                <li>Respect des règles d'utilisation des ressources</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B1.2</strong> — Répondre aux incidents et demandes d'assistance</summary>
+                            <ul>
+                                <li>Diagnostic et résolution d'incidents logiciels et matériels (PC, Mac)</li>
+                                <li>Prise en charge et suivi des demandes clients</li>
+                                <li>Gestion des priorités d'intervention</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B1.4</strong> — Travailler en mode projet</summary>
+                            <ul>
+                                <li>Planification et respect des délais d'intervention</li>
+                                <li>Suivi des dossiers clients</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B1.5</strong> — Mettre à disposition un service informatique</summary>
+                            <ul>
+                                <li>Installation et configuration de postes de travail</li>
+                                <li>Remise en état et livraison aux clients</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B1.6</strong> — Organiser son développement professionnel</summary>
+                            <ul>
+                                <li>Adaptation aux procédures internes de l'entreprise</li>
+                                <li>Relation client et communication technique</li>
+                            </ul>
+                        </details>
+                    </td>
+                </tr>
+
+                <!-- PROJET 1 -->
+                <tr class="row-blue">
+                    <td class="projet-cell">
+                        <span class="projet-label">E5 — Projet 1</span>
+                        <strong>Gust'Délice</strong>
+                        <span class="projet-type">Site de partage de recettes de desserts</span>
+                        <div class="projet-tech-mini">
+                            <span>PHP</span><span>MySQL</span><span>Bootstrap 5</span>
+                        </div>
+                    </td>
+                    <td class="comp-cell">
+                        <details>
+                            <summary><strong>B1.3</strong> — Développer la présence en ligne</summary>
+                            <ul>
+                                <li>Développement d'une application web accessible en ligne</li>
+                                <li>Déploiement et hébergement du projet</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B1.4</strong> — Travailler en mode projet</summary>
+                            <ul>
+                                <li>Planification des étapes de développement</li>
+                                <li>Suivi via versioning GitHub</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.1</strong> — Conception et développement d'une solution applicative</summary>
+                            <ul>
+                                <li>Conception du MCD / MLD</li>
+                                <li>Développement PHP complet : CRUD, sessions, upload d'images</li>
+                                <li>Authentification sécurisée (password_hash / password_verify)</li>
+                                <li>Interface responsive Bootstrap 5</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.2</strong> — Maintenance corrective ou évolutive</summary>
+                            <ul>
+                                <li>Corrections de bugs identifiés en phase de test</li>
+                                <li>Ajout du système de commentaires en cours de développement</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.3</strong> — Gestion des données</summary>
+                            <ul>
+                                <li>Modélisation BDD MySQL (utilisateurs, recettes, commentaires)</li>
+                                <li>Requêtes PDO préparées (protection contre injections SQL)</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.4</strong> — Travail en mode projet</summary>
+                            <ul>
+                                <li>Définition du cahier des charges</li>
+                                <li>Gestion des versions avec Git / GitHub</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.5</strong> — Production de documentation</summary>
+                            <ul>
+                                <li>Documentation technique (MCD, dictionnaire de données)</li>
+                                <li>Fiche descriptive du projet</li>
+                            </ul>
+                        </details>
+                    </td>
+                </tr>
+
+                <!-- PROJET 2 -->
+                <tr class="row-blue">
+                    <td class="projet-cell">
+                        <span class="projet-label">E5 — Projet 2</span>
+                        <strong>Les Bonnes Pièces</strong>
+                        <span class="projet-type">Catalogue e-commerce pièces automobiles</span>
+                        <div class="projet-tech-mini">
+                            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Bootstrap 5</span>
+                        </div>
+                    </td>
+                    <td class="comp-cell">
+                        <details>
+                            <summary><strong>B1.3</strong> — Développer la présence en ligne</summary>
+                            <ul>
+                                <li>Site e-commerce avec interface publique accessible</li>
+                                <li>Catalogue produits en ligne</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B1.4</strong> — Travailler en mode projet</summary>
+                            <ul>
+                                <li>Découpage en sprints de développement</li>
+                                <li>Versioning GitHub avec commits réguliers</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.1</strong> — Conception et développement d'une solution applicative</summary>
+                            <ul>
+                                <li>Architecture MVC simplifiée</li>
+                                <li>Système de panier en sessions PHP</li>
+                                <li>Interface d'administration complète (CRUD produits)</li>
+                                <li>Gestion des rôles utilisateur / administrateur</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.2</strong> — Maintenance corrective ou évolutive</summary>
+                            <ul>
+                                <li>Ajout de fonctionnalités : filtres produits, gestion des stocks</li>
+                                <li>Corrections et optimisations en cours de projet</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.3</strong> — Gestion des données</summary>
+                            <ul>
+                                <li>BDD relationnelle : produits, catégories, utilisateurs, commandes</li>
+                                <li>Requêtes PDO avec jointures SQL optimisées</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.4</strong> — Travail en mode projet</summary>
+                            <ul>
+                                <li>Cahier des charges fonctionnel</li>
+                                <li>Gestion des versions et documentation des commits</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary><strong>B2.5</strong> — Production de documentation</summary>
+                            <ul>
+                                <li>Manuel utilisateur</li>
+                                <li>Documentation base de données (MLD)</li>
+                                <li>Fiche descriptive du projet</li>
+                            </ul>
+                        </details>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+// Dark mode
+const toggle = document.getElementById('darkToggle');
+const html = document.documentElement;
+const saved = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', saved);
+toggle.querySelector('i').className = saved === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+toggle.addEventListener('click', () => {
+    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    toggle.querySelector('i').className = next === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+});
+</script>
+</body>
+</html>
