@@ -657,6 +657,41 @@ ul { list-style: none; }
 
 .contact-card a:hover { color: var(--primary); }
 
+/* ===================== HOME GRID ===================== */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 24px 16px;
+    transition: transform 0.25s, box-shadow 0.25s;
+    cursor: pointer;
+}
+
+.home-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.hc-icon {
+    width: 48px; height: 48px;
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.home-card h3 { font-size: 1rem; }
+.home-card p { font-size: 0.82rem; color: var(--text); }
+
 /* ===================== FOOTER ===================== */
 .footer {
     text-align: center;
