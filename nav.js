@@ -1,15 +1,11 @@
 function initNav(activeId) {
     const links = [
         { href: 'index.html',       id: 'accueil',      label: 'Accueil' },
-        { href: 'about.html',       id: 'about',        label: 'À propos' },
-        { href: 'formation.html',   id: 'formation',    label: 'Formation' },
-        { href: 'experiences.html', id: 'experiences',  label: 'Expériences' },
-        { href: 'projets.html',     id: 'projets',      label: 'Projets' },
-        { href: 'fiches.html',      id: 'fiches',       label: 'Fiches E4/E5' },
+        { href: 'formation.html',   id: 'formation',    label: 'Formation & Expériences' },
+        { href: 'projets.html',     id: 'projets',      label: 'Projets & Fiches' },
         { href: 'competences.html', id: 'competences',  label: 'Compétences' },
         { href: 'synthese.html',    id: 'synthese',     label: 'Synthèse' },
         { href: 'veille.html',      id: 'veille',       label: 'Veille' },
-        { href: 'contact.html',     id: 'contact',      label: 'Contact' },
     ];
 
     document.querySelector('.navbar').innerHTML = `
