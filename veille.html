@@ -9,6 +9,150 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* ---- Grille veille ---- */
+        .veille-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 8px;
+        }
+
+        /* ---- Carte cliquable ---- */
+        .v-card {
+            background: var(--card);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform .2s, box-shadow .2s;
+            border: 1px solid var(--border);
+        }
+        .v-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.13);
+        }
+        .v-card-img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            display: block;
+        }
+        .v-card-body {
+            padding: 16px;
+        }
+        .v-card-meta {
+            font-size: .8rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+        .v-card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--heading);
+            line-height: 1.4;
+        }
+
+        /* ---- Modal overlay ---- */
+        .v-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.55);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .v-overlay.open { display: flex; }
+
+        /* ---- Modal box ---- */
+        .v-modal {
+            background: var(--card);
+            border-radius: var(--radius);
+            max-width: 680px;
+            width: 100%;
+            max-height: 88vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0,0,0,.25);
+        }
+        .v-modal-close {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding: 12px 16px 0;
+            background: var(--card);
+            z-index: 10;
+        }
+        .v-modal-close button {
+            background: none;
+            border: none;
+            font-size: 1.4rem;
+            cursor: pointer;
+            color: var(--text);
+        }
+        .v-modal-close button:hover { color: var(--heading); }
+
+        .v-modal-header {
+            padding: 0 28px 20px;
+        }
+        .v-modal-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .v-modal-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .v-info-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: .9rem;
+            color: var(--text);
+        }
+        .v-info-item i {
+            color: var(--primary);
+            width: 16px;
+            flex-shrink: 0;
+        }
+        .v-info-item strong { color: var(--heading); }
+        .v-info-item a { color: var(--primary); text-decoration: none; }
+        .v-info-item a:hover { text-decoration: underline; }
+
+        .v-modal-body { padding: 0 28px 28px; }
+        .v-modal-body h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--heading);
+            margin-bottom: 14px;
+        }
+        .v-resume-block { margin-bottom: 16px; }
+        .v-resume-block p {
+            font-size: .9rem;
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        .v-resume-block ul {
+            padding-left: 18px;
+            color: var(--text);
+            font-size: .9rem;
+            line-height: 1.8;
+        }
+        .v-resume-block strong { color: var(--heading); }
+    </style>
 </head>
 <body>
 <nav class="navbar"></nav>
@@ -18,99 +162,155 @@
         <h2 class="section-title">Veille technologique</h2>
         <div class="section-line"></div>
     </div>
+
     <div class="veille-grid">
 
-        <!-- ARTICLE 1 -->
-        <div class="card veille-card">
-            <div class="veille-top">
-                <span class="veille-category bg-purple">Intelligence Artificielle</span>
-                <span class="veille-date"><i class="fas fa-calendar"></i> Nov. 2024</span>
-            </div>
-            <h3>Why PyTorch Gets All the Love</h3>
-            <p class="veille-source">
-                <i class="fas fa-link"></i> The New Stack —
-                <a href="https://thenewstack.io/why-pytorch-gets-all-the-love/" target="_blank" class="veille-link">
-                    Lire l'article <i class="fas fa-external-link-alt"></i>
-                </a>
-            </p>
-            <p class="veille-desc">
-                PyTorch s'est imposé comme le framework de deep learning préféré des chercheurs et développeurs,
-                surpassant TensorFlow dans de nombreux domaines. Cet article analyse les raisons de cet engouement.
-            </p>
-            <div class="veille-points">
-                <h4>Points clés :</h4>
-                <ul>
-                    <li><strong>Graphes dynamiques (eager execution) :</strong> PyTorch construit le graphe de calcul à la volée, ce qui le rend plus intuitif à déboguer</li>
-                    <li><strong>Pythonique :</strong> Syntaxe proche du Python natif, courbe d'apprentissage plus douce</li>
-                    <li><strong>Communauté recherche :</strong> Adopté massivement par la communauté académique (Google Scholar, arXiv)</li>
-                    <li><strong>Écosystème riche :</strong> HuggingFace, Lightning, torchvision — bibliothèques bien intégrées</li>
-                    <li><strong>Production viable :</strong> TorchScript et ONNX permettent le déploiement en production</li>
-                </ul>
+        <!-- CARTE 1 -->
+        <div class="v-card" onclick="openModal('m1')">
+            <img class="v-card-img"
+                 src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80"
+                 alt="PyTorch IA">
+            <div class="v-card-body">
+                <p class="v-card-meta">The New Stack &nbsp;·&nbsp; 26/11/2024</p>
+                <p class="v-card-title">Why PyTorch Gets All the Love</p>
             </div>
         </div>
 
-        <!-- ARTICLE 2 -->
-        <div class="card veille-card">
-            <div class="veille-top">
-                <span class="veille-category bg-blue">Data Science</span>
-                <span class="veille-date"><i class="fas fa-calendar"></i> Oct. 2023</span>
-            </div>
-            <h3>The Role of Programming Languages in Data Science</h3>
-            <p class="veille-source">
-                <i class="fas fa-link"></i> NYIT Online —
-                <a href="https://online.nyit.edu/blog/the-role-of-programming-languages-in-data-science" target="_blank" class="veille-link">
-                    Lire l'article <i class="fas fa-external-link-alt"></i>
-                </a>
-            </p>
-            <p class="veille-desc">
-                Cet article explore comment les langages de programmation façonnent la data science moderne,
-                en comparant Python, R, SQL et d'autres outils selon leur usage dans l'analyse de données et le machine learning.
-            </p>
-            <div class="veille-points">
-                <h4>Points clés :</h4>
-                <ul>
-                    <li><strong>Python :</strong> Langage dominant en data science grâce à ses bibliothèques (pandas, NumPy, scikit-learn)</li>
-                    <li><strong>R :</strong> Privilégié pour la statistique et la visualisation de données (ggplot2, dplyr)</li>
-                    <li><strong>SQL :</strong> Indispensable pour interroger et manipuler les bases de données relationnelles</li>
-                    <li><strong>Julia :</strong> Langage émergent pour les calculs scientifiques haute performance</li>
-                    <li><strong>Polyvalence requise :</strong> Un data scientist maîtrise souvent plusieurs langages selon le contexte</li>
-                </ul>
+        <!-- CARTE 2 -->
+        <div class="v-card" onclick="openModal('m2')">
+            <img class="v-card-img"
+                 src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&q=80"
+                 alt="Data Science">
+            <div class="v-card-body">
+                <p class="v-card-meta">New York Institute of Technology &nbsp;·&nbsp; 25/10/2023</p>
+                <p class="v-card-title">The Role of Programming Languages in Data Science</p>
             </div>
         </div>
 
-        <!-- ARTICLE 3 -->
-        <div class="card veille-card">
-            <div class="veille-top">
-                <span class="veille-category bg-green">Langages & Tendances</span>
-                <span class="veille-date"><i class="fas fa-calendar"></i> Oct. 2024</span>
-            </div>
-            <h3>Will There Be a New Dominant Programming Language by 2030?</h3>
-            <p class="veille-source">
-                <i class="fas fa-link"></i> Analytics Insight —
-                <a href="https://www.analyticsinsight.net/programming/will-there-be-a-new-dominant-programming-language-by-2030" target="_blank" class="veille-link">
-                    Lire l'article <i class="fas fa-external-link-alt"></i>
-                </a>
-            </p>
-            <p class="veille-desc">
-                Avec l'essor de l'IA et des nouvelles architectures matérielles, certains estiment qu'un nouveau langage
-                pourrait s'imposer d'ici 2030. L'article passe en revue les candidats potentiels et les tendances du secteur.
-            </p>
-            <div class="veille-points">
-                <h4>Points clés :</h4>
-                <ul>
-                    <li><strong>Rust :</strong> Performances et sécurité mémoire sans garbage collector — adopté par Microsoft, Google, Linux</li>
-                    <li><strong>Mojo :</strong> Nouveau langage (superset de Python) pensé pour l'IA et les GPU, très prometteur</li>
-                    <li><strong>TypeScript :</strong> Consolidation sur le web full-stack, en forte progression face à JavaScript</li>
-                    <li><strong>Python durable :</strong> Malgré tout, Python reste incontournable grâce à son écosystème IA/data</li>
-                    <li><strong>Spécialisation :</strong> La tendance est aux langages spécialisés plutôt qu'à un seul langage universel</li>
-                </ul>
+        <!-- CARTE 3 -->
+        <div class="v-card" onclick="openModal('m3')">
+            <img class="v-card-img"
+                 src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80"
+                 alt="Langages 2030">
+            <div class="v-card-body">
+                <p class="v-card-meta">Analytics Insight &nbsp;·&nbsp; 04/10/2024</p>
+                <p class="v-card-title">Will There Be a New Dominant Programming Language by 2030?</p>
             </div>
         </div>
 
     </div>
 </main>
 
+<!-- MODAL 1 — PyTorch -->
+<div class="v-overlay" id="m1">
+    <div class="v-modal">
+        <div class="v-modal-close"><button onclick="closeModal('m1')"><i class="fas fa-times"></i></button></div>
+        <div class="v-modal-header">
+            <p class="v-modal-title">Why PyTorch Gets All the Love</p>
+            <div class="v-modal-info">
+                <div class="v-info-item"><i class="fas fa-newspaper"></i><span>Source : <strong>The New Stack</strong></span></div>
+                <div class="v-info-item"><i class="fas fa-external-link-alt"></i><span>Lien : <a href="https://thenewstack.io/why-pytorch-gets-all-the-love/" target="_blank">Lire l'article</a></span></div>
+                <div class="v-info-item"><i class="fas fa-calendar"></i><span>Date : <strong>26/11/2024</strong></span></div>
+                <div class="v-info-item"><i class="fas fa-file-alt"></i><span>Type : <strong>Article web</strong></span></div>
+            </div>
+        </div>
+        <div class="v-modal-body">
+            <h4>Résumé</h4>
+            <div class="v-resume-block">
+                <p>PyTorch s'est imposé comme le framework de deep learning préféré des chercheurs et développeurs, surpassant TensorFlow dans de nombreux domaines.</p>
+                <p>Avantages clés :</p>
+                <ul>
+                    <li><strong>Graphes dynamiques (eager execution) :</strong> le graphe de calcul est construit à la volée, plus intuitif à déboguer qu'un graphe statique.</li>
+                    <li><strong>Syntaxe pythonique :</strong> proche du Python natif, courbe d'apprentissage plus douce.</li>
+                    <li><strong>Communauté recherche :</strong> adopté massivement dans le milieu académique (arXiv, Google Scholar).</li>
+                    <li><strong>Écosystème riche :</strong> HuggingFace, Lightning, torchvision — bibliothèques bien intégrées.</li>
+                    <li><strong>Production viable :</strong> TorchScript et ONNX permettent le déploiement en production.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 2 — Data Science -->
+<div class="v-overlay" id="m2">
+    <div class="v-modal">
+        <div class="v-modal-close"><button onclick="closeModal('m2')"><i class="fas fa-times"></i></button></div>
+        <div class="v-modal-header">
+            <p class="v-modal-title">The Role of Programming Languages in Data Science</p>
+            <div class="v-modal-info">
+                <div class="v-info-item"><i class="fas fa-newspaper"></i><span>Source : <strong>NYIT Online</strong></span></div>
+                <div class="v-info-item"><i class="fas fa-external-link-alt"></i><span>Lien : <a href="https://online.nyit.edu/blog/the-role-of-programming-languages-in-data-science" target="_blank">Lire l'article</a></span></div>
+                <div class="v-info-item"><i class="fas fa-calendar"></i><span>Date : <strong>25/10/2023</strong></span></div>
+                <div class="v-info-item"><i class="fas fa-file-alt"></i><span>Type : <strong>Article web</strong></span></div>
+            </div>
+        </div>
+        <div class="v-modal-body">
+            <h4>Résumé</h4>
+            <div class="v-resume-block">
+                <p>Cet article explore comment les langages de programmation façonnent la data science moderne, en comparant leurs usages selon les besoins d'analyse et de machine learning.</p>
+                <p>Langages principaux :</p>
+                <ul>
+                    <li><strong>Python :</strong> langage dominant grâce à ses bibliothèques (pandas, NumPy, scikit-learn, TensorFlow).</li>
+                    <li><strong>R :</strong> privilégié pour la statistique et la visualisation (ggplot2, dplyr).</li>
+                    <li><strong>SQL :</strong> indispensable pour interroger et manipuler les bases de données relationnelles.</li>
+                    <li><strong>Julia :</strong> langage émergent pour les calculs scientifiques haute performance.</li>
+                    <li><strong>Polyvalence requise :</strong> un data scientist maîtrise souvent plusieurs langages selon le contexte métier.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL 3 — 2030 -->
+<div class="v-overlay" id="m3">
+    <div class="v-modal">
+        <div class="v-modal-close"><button onclick="closeModal('m3')"><i class="fas fa-times"></i></button></div>
+        <div class="v-modal-header">
+            <p class="v-modal-title">Will There Be a New Dominant Programming Language by 2030?</p>
+            <div class="v-modal-info">
+                <div class="v-info-item"><i class="fas fa-newspaper"></i><span>Source : <strong>Analytics Insight</strong></span></div>
+                <div class="v-info-item"><i class="fas fa-external-link-alt"></i><span>Lien : <a href="https://www.analyticsinsight.net/programming/will-there-be-a-new-dominant-programming-language-by-2030" target="_blank">Lire l'article</a></span></div>
+                <div class="v-info-item"><i class="fas fa-calendar"></i><span>Date : <strong>04/10/2024</strong></span></div>
+                <div class="v-info-item"><i class="fas fa-file-alt"></i><span>Type : <strong>Article web</strong></span></div>
+            </div>
+        </div>
+        <div class="v-modal-body">
+            <h4>Résumé</h4>
+            <div class="v-resume-block">
+                <p>Tendances et limites des langages actuels :</p>
+                <ul>
+                    <li><strong>JavaScript :</strong> essentiel pour le web, mais problèmes de scalabilité et maintenabilité dans les applications complexes.</li>
+                    <li><strong>Python :</strong> populaire mais plus lent que C++/Rust, moins adapté aux applications temps réel.</li>
+                    <li><strong>Java :</strong> clé pour Android, mais trop verbeux comparé à Kotlin.</li>
+                </ul>
+                <p>Langages concurrents :</p>
+                <ul>
+                    <li><strong>Rust, Kotlin, Swift, Go, TypeScript</strong> gagnent du terrain grâce à leurs spécificités (sécurité mémoire, performances, scalabilité).</li>
+                    <li><strong>Mojo :</strong> nouveau langage superset de Python pensé pour l'IA et les GPU, très prometteur.</li>
+                </ul>
+                <p>L'IA, le machine learning et le cloud computing influenceront l'évolution des langages d'ici 2030, favorisant la spécialisation plutôt qu'un langage universel.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="nav.js"></script>
 <script>initNav('veille');</script>
+<script>
+    function openModal(id) {
+        document.getElementById(id).classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeModal(id) {
+        document.getElementById(id).classList.remove('open');
+        document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.v-overlay').forEach(ov => {
+        ov.addEventListener('click', e => { if (e.target === ov) closeModal(ov.id); });
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') document.querySelectorAll('.v-overlay.open').forEach(ov => closeModal(ov.id));
+    });
+</script>
 </body>
 </html>
