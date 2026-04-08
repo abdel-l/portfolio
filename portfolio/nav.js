@@ -9,7 +9,6 @@ function initNav(activeId) {
     ];
 
     document.querySelector('.navbar').innerHTML = `
-        <a href="index.html" class="nav-brand">AF</a>
         <ul class="nav-menu">
             ${links.map(l => `<li><a href="${l.href}" class="nav-item${l.id === activeId ? ' active' : ''}">${l.label}</a></li>`).join('')}
         </ul>
