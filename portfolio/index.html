@@ -1,71 +1,407 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="light">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdelkader FOFANA — Portfolio BTS SIO</title>
+    <title>Portfolio BTS SIO SLAM</title>
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS (Animate On Scroll) pour les animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Notre CSS personnalisé -->
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<nav class="navbar"></nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span>Portfolio</span>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#veille">Veille Techno</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<main class="main-content">
-
-    <!-- HERO -->
-    <section class="hero-section">
-        <div class="hero-card card">
-            <div class="hero-bg"></div>
-            <div class="hero-body">
-                <h1 class="hero-name">Abdelkader FOFANA</h1>
-                <p class="hero-title">Développeur Web <span class="dot">•</span> BTS SIO SLAM</p>
-                <p class="hero-sub">Candidat libre — Session 2026</p>
-                <div class="hero-tags">
-                    <span class="tag">PHP</span>
-                    <span class="tag">MySQL</span>
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">Bootstrap 5</span>
+    <!-- Section Accueil -->
+    <section id="accueil" class="section-accueil">
+        <div class="container">
+            <div class="accueil-content" data-aos="fade-up">
+                <div class="profile-section">
+                    <div class="profile-photo">
+                        <img src= alt="Abdelkader FOFANA">
+                    </div>
+                    <div class="profile-text">
+                        <h1>Abdelkader FOFANA</h1>
+                        <h2>Étudiant en BTS SIO option SLAM</h2>
+                        <p>Passionné par les nouvelles technologies.</p>
+                    </div>
                 </div>
-                <div class="hero-btns">
-                    <a href="projets.html" class="btn btn-primary">Mes projets</a>
-                    <a href="mailto:Abdelkaderfofanaa@gmail.com" class="btn btn-gradient">Me contacter</a>
-                    <a href="stage.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Stage</a>
-                </div>
-                <div class="hero-socials">
-                    <a href="https://github.com/abdel-l" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:Abdelkaderfofanaa@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="animated-bg">
+                <div class="shapes">
+                    <div class="shape shape1"></div>
+                    <div class="shape shape2"></div>
+                    <div class="shape shape3"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- À PROPOS -->
-    <section class="section">
-        <div class="section-header">
-            <h2 class="section-title">À propos</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="about-grid">
-            <div class="card about-text-card">
-                <p>Candidat libre au <strong>BTS SIO option SLAM</strong> (Services Informatiques aux Organisations – Solutions Logicielles et Applications Métiers), session 2026, je suis passionné par le développement web et les technologies backend.</p>
-                <p>Ma formation m'a permis de développer des compétences solides en <strong>PHP/MySQL</strong>, <strong>JavaScript</strong>, et en gestion de projets web de bout en bout. J'ai également une expérience concrète en <strong>support technique N1/N2</strong>, ce qui me donne une vision complète de l'informatique.</p>
-            </div>
-            <div class="card about-info-card">
-                <div class="info-row"><span class="info-label"><i class="fas fa-map-marker-alt"></i> Localisation</span><span class="info-val">Paris</span></div>
-                <div class="info-row"><span class="info-label"><i class="fas fa-envelope"></i> Email</span><span class="info-val">Abdelkaderfofanaa@gmail.com</span></div>
-                <div class="info-row"><span class="info-label"><i class="fas fa-phone"></i> Téléphone</span><span class="info-val">07 00 00 00 00</span></div>
-                <div class="info-row"><span class="info-label"><i class="fas fa-circle-dot"></i> Statut</span><span class="info-val badge-green">Disponible</span></div>
-                <div class="info-row"><span class="info-label"><i class="fab fa-github"></i> GitHub</span><span class="info-val"><a href="https://github.com/abdel-l" target="_blank" style="color:var(--primary)">abdel-l</a></span></div>
+    <!-- Section Parcours -->
+    <section id="parcours" class="section-parcours">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Mon Parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Maria deraismes, Paris  - Baccalauréat Professionnel</h3>
+                        <span class="date">2019 - 2021</span>
+                        <p>Bac Pro GA (Gestion-administration) </p>
+                     </div>
+                    
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Roger Verlomme - BTS GPME</h3>
+                        <span class="date">2021 - 2022</span>
+                        <p>Change de cursus,</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Institut F2I - BTS SIO OPTION SLAM</h3>
+                        <span class="date">2023 - 2025</span>
+                        <p>Ne passer pas le diplome </p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-future" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Candidat libre</h3>
+                        <span class="date">2025 et 2026</span>
+                        <p>Passer le bts en candidat libre.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-</main>
+    <!-- Section Compétences -->
+    <section id="competences" class="section-competences">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Mes Compétences</h2>
+            
+            <div class="competences-container" data-aos="fade-up">
+                <div class="competences-tableau">
+                    <h3>Tableau de compétences BTS SIO SLAM</h3>
+                    <div class="tableau-container">
+                        <img src="images/tableau-competences.png" alt="Tableau de compétences BTS SIO SLAM" class="tableau-img">
+                        <div class="tableau-actions">
+                            <a href="docs/tableau-competences.xlsx" class="btn-download-tableau" download>
+                                <i class="fas fa-download"></i> Télécharger le tableau Excel
+                            </a>
+                            <a href="images/tableau-competences.png" class="btn-download-tableau btn-secondary" download>
+                                <i class="fas fa-image"></i> Télécharger l'image
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script src="nav.js"></script>
-<script>initNav('accueil');</script>
+    <!-- Section Projets -->
+    <section id="projets" class="section-projets">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Mes Projets</h2>
+            <div class="projets-grid">
+                <div class="projet-card" data-aos="flip-left">
+                    <div class="projet-img">
+                        <img src="images/projet1.jpg" alt="Projet 1">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Projet 1 - Gust'Délice</h3>
+                        <p>Site de partage de recettes.</p>
+                        <a href="#" class="btn-projet" data-projet="1">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="projet-card" data-aos="flip-right">
+                    <div class="projet-img">
+                        <img src="images/projet2.jpg" alt="Projet 2">
+                    </div>
+                    <div class="projet-info">
+                        <h3>Projet 2 - Les Bonnes Pièces</h3>
+                        <p>Site e-commerce avec catalogue produits,</p>
+                        <a href="#" class="btn-projet" data-projet="2">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Carrousel pour les projets -->
+    <div id="projetModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Titre du Projet</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-inner" id="carouselInner">
+                        <!-- Les images seront ajoutées dynamiquement -->
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <!-- Les indicateurs seront ajoutés dynamiquement -->
+                </div>
+            </div>
+            <div class="modal-description">
+                <p id="modalDescription">Description du projet</p>
+                <div class="project-technologies" id="projectTechnologies">
+                    <!-- Les technologies seront ajoutées dynamiquement -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Veille Technologique -->
+    <section id="veille" class="section-veille">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Veille Technologique</h2>
+            <div class="veille-content" data-aos="fade-up">
+                <div class="veille-intro">
+                    <h3>L'Intelligence Artificielle : Passé, Présent et Futur</h3>
+                    <p>Ma veille technologique porte sur l'Intelligence Artificielle (IA), une technologie révolutionnaire qui transforme notre monde. Découvrons ensemble son évolution, ses applications actuelles et ses perspectives d'avenir.</p>
+                </div>
+                
+                <div class="veille-timeline">
+                    <!-- Passé -->
+                    <div class="veille-section" data-aos="fade-up" data-aos-delay="100">
+                        <div class="veille-header">
+                            <div class="veille-icon past">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <h3>Les Origines de l'IA</h3>
+                            <span class="veille-period">1950 - 2010</span>
+                        </div>
+                        <div class="veille-details">
+                            <div class="veille-milestone">
+                                <h4>1950 - Test de Turing</h4>
+                                <p>Alan Turing propose le célèbre "Test de Turing" pour évaluer l'intelligence d'une machine.</p>
+                            </div>
+                            <div class="veille-milestone">
+                                <h4>1956 - Naissance officielle</h4>
+                                <p>Le terme "Intelligence Artificielle" est officiellement créé lors de la conférence de Dartmouth.</p>
+                            </div>
+                            <div class="veille-milestone">
+                                <h4>1997 - Deep Blue vs Kasparov</h4>
+                                <p>L'ordinateur IBM Deep Blue bat le champion du monde d'échecs Garry Kasparov.</p>
+                            </div>
+                            <div class="veille-milestone">
+                                <h4>2006 - Deep Learning</h4>
+                                <p>Renaissance de l'IA grâce aux réseaux de neurones profonds et à l'augmentation de la puissance de calcul.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Présent -->
+                    <div class="veille-section" data-aos="fade-up" data-aos-delay="200">
+                        <div class="veille-header">
+                            <div class="veille-icon present">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>L'IA Aujourd'hui</h3>
+                            <span class="veille-period">2010 - 2025</span>
+                        </div>
+                        <div class="veille-details">
+                            <div class="applications-grid">
+                                <div class="application-card">
+                                    <i class="fas fa-comments"></i>
+                                    <h4>IA Conversationnelle</h4>
+                                    <p>ChatGPT, Claude, Gemini révolutionnent la communication homme-machine</p>
+                                </div>
+                                <div class="application-card">
+                                    <i class="fas fa-image"></i>
+                                    <h4>Génération d'images</h4>
+                                    <p>DALL-E, Midjourney, Stable Diffusion créent des images à partir de texte</p>
+                                </div>
+                                <div class="application-card">
+                                    <i class="fas fa-car"></i>
+                                    <h4>Véhicules autonomes</h4>
+                                    <p>Tesla, Waymo développent des voitures entièrement autonomes</p>
+                                </div>
+                                <div class="application-card">
+                                    <i class="fas fa-stethoscope"></i>
+                                    <h4>Médecine</h4>
+                                    <p>Diagnostic médical, découverte de médicaments, chirurgie assistée</p>
+                                </div>
+                                <div class="application-card">
+                                    <i class="fas fa-code"></i>
+                                    <h4>Programmation</h4>
+                                    <p>GitHub Copilot, CodeT5 assistent les développeurs dans leur code</p>
+                                </div>
+                                <div class="application-card">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h4>Finance</h4>
+                                    <p>Trading algorithmique, analyse de risques, détection de fraudes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Futur -->
+                    <div class="veille-section" data-aos="fade-up" data-aos-delay="300">
+                        <div class="veille-header">
+                            <div class="veille-icon future">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>L'IA de Demain</h3>
+                            <span class="veille-period">2025 et au-delà</span>
+                        </div>
+                        <div class="veille-details">
+                            <div class="future-predictions">
+                                <div class="prediction-item">
+                                    <div class="prediction-year">2025-2030</div>
+                                    <div class="prediction-content">
+                                        <h4>IA Générale (AGI)</h4>
+                                        <p>Développement d'IA capables de comprendre et d'apprendre n'importe quelle tâche intellectuelle humaine</p>
+                                    </div>
+                                </div>
+                                <div class="prediction-item">
+                                    <div class="prediction-year">2030-2035</div>
+                                    <div class="prediction-content">
+                                        <h4>Automatisation massive</h4>
+                                        <p>Transformation complète du marché du travail avec l'automatisation de nombreux métiers</p>
+                                    </div>
+                                </div>
+                                <div class="prediction-item">
+                                    <div class="prediction-year">2035-2040</div>
+                                    <div class="prediction-content">
+                                        <h4>IA quantique</h4>
+                                        <p>Fusion de l'IA et de l'informatique quantique pour des capacités de calcul révolutionnaires</p>
+                                    </div>
+                                </div>
+                                <div class="prediction-item">
+                                    <div class="prediction-year">2040+</div>
+                                    <div class="prediction-content">
+                                        <h4>Singularité technologique</h4>
+                                        <p>Moment hypothétique où l'IA dépassera l'intelligence humaine dans tous les domaines</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Impact et réflexions -->
+                <div class="veille-conclusion" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Impact sur le développement informatique</h3>
+                    <div class="impact-grid">
+                        <div class="impact-item">
+                            <i class="fas fa-tools"></i>
+                            <h4>Outils de développement</h4>
+                            <p>L'IA transforme notre façon de coder avec des assistants intelligents et la génération automatique de code</p>
+                        </div>
+                        <div class="impact-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Compétences requises</h4>
+                            <p>Les développeurs doivent s'adapter et apprendre à collaborer avec l'IA plutôt que d'être remplacés</p>
+                        </div>
+                        <div class="impact-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovation accélérée</h4>
+                            <p>L'IA permet de créer des applications plus intelligentes et d'automatiser des tâches complexes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-right">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Mes informations</h3>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Abdelkaderfofanaa@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+33 7 67 66 96 22</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Paris, France</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://github.com/abdel-l" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <h3>Envoyez-moi un message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Votre email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Envoyer l'email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Abdelkader FOFANA - Portfolio BTS SIO SLAM</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
