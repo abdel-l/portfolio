@@ -1344,3 +1344,77 @@ footer {
 .info-item i:hover, .veille-categorie i:hover, .timeline-icon i:hover {
     animation: spin 1s linear;
 }
+
+/* === ARTICLES VEILLE === */
+.veille-articles {
+    margin-top: 3rem;
+}
+
+.veille-articles h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.article-card {
+    display: flex;
+    gap: 1rem;
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(108, 99, 255, 0.15);
+}
+
+.article-icon {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    min-width: 40px;
+}
+
+.article-source {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.article-info h4 {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+    color: var(--dark-color);
+}
+
+.article-date {
+    font-size: 0.8rem;
+    color: #888;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.article-date i {
+    margin-right: 4px;
+}
+
+.article-info p {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
